@@ -1,0 +1,26 @@
+# Create a list
+my_list = [1, 2, 3, 4, 5]
+
+# Append an element
+my_list.append(6)
+
+# Insert an element at a specific index
+my_list.insert(2, 99)  # Inserts 99 at index 2
+
+# Remove an element by value
+my_list.remove(3)
+
+# Pop an element by index (default last)
+popped_value = my_list.pop()
+
+# Reverse a list
+my_list.reverse()
+
+# Sort a list
+my_list.sort()
+
+# List comprehension
+squared = [x**2 for x in my_list]
+
+print(my_list)
+print(squared)
