@@ -1,0 +1,58 @@
+# Sort a list of tuples by the second value
+data = [(1, 'banana'), (3, 'apple'), (2, 'orange')]
+sorted_data = sorted(data, key=lambda x: x[1])
+print(sorted_data)
+
+
+
+# Flatten a list of lists
+nested_list = [[1, 2], [3, 4], [5, 6]]
+flattened = [item for sublist in nested_list for item in sublist]
+print(flattened)
+
+
+
+# Sort dictionary by value
+scores = {'Alice': 85, 'Bob': 92, 'Charlie': 78}
+sorted_scores = sorted(scores.items(), key=lambda x: x[1], reverse=True)
+print(sorted_scores)
+
+
+
+# Combine two lists
+names = ['Alice', 'Bob', 'Charlie']
+ages = [25, 30, 35]
+
+combined = list(zip(names, ages))
+print(combined)
+
+# Unzip
+unzipped = list(zip(*combined))
+print(unzipped)
+
+
+
+
+# Iterate with index
+fruits = ['apple', 'banana', 'cherry']
+for index, fruit in enumerate(fruits, start=1):
+    print(index, fruit)
+
+
+
+# Generator for squares of numbers
+squares = (x**2 for x in range(5))
+print(list(squares))  # Convert to list
+
+
+
+numbers = [1, 2, 3, 4, 5]
+
+# Check if any number is even
+print(any(x % 2 == 0 for x in numbers))  # True
+
+# Check if all numbers are positive
+print(all(x > 0 for x in numbers))  # True
+
+
+
