@@ -1,0 +1,12 @@
+# Lambda for simple arithmetic
+square = lambda x: x**2
+print(square(5))
+
+# Lambda with map (apply function to list)
+nums = [1, 2, 3, 4, 5]
+squared_nums = list(map(lambda x: x**2, nums))
+print(squared_nums)
+
+# Lambda with filter (filter based on condition)
+even_nums = list(filter(lambda x: x % 2 == 0, nums))
+print(even_nums)
