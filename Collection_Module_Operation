@@ -1,0 +1,18 @@
+from collections import Counter, defaultdict, deque
+
+# Counter - Count occurrences of elements in a list
+counter = Counter([1, 2, 2, 3, 3, 3, 4])
+print(counter)
+
+# Defaultdict - Avoids KeyError (returns default value)
+dd = defaultdict(int)
+dd['apple'] = 5
+print(dd['banana'])  # Outputs default int() value: 0
+
+# Deque - Fast appends and pops from both ends
+d = deque([10, 20, 30])
+d.appendleft(5)  # Add at the beginning
+d.append(40)     # Add at the end
+d.pop()          # Remove from end
+d.popleft()      # Remove from beginning
+print(d)
