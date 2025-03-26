@@ -1,0 +1,13 @@
+# Split a string into a list
+sentence = "Hello World! Welcome to Python."
+words = sentence.split()  # Default split by space
+print(words)
+
+# Split by a specific delimiter
+csv_data = "apple,banana,cherry"
+fruits = csv_data.split(',')
+print(fruits)
+
+# Join a list into a string
+joined_sentence = " ".join(words)
+print(joined_sentence)
